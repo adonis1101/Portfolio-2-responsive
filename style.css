@@ -644,6 +644,11 @@ footer span a:hover {
   font-size: 0.75em;
   }
 
+  .wrapper a:nth-child(4) {
+    color:thistle;
+    font-size: 0.75em;
+  }
+
   .wrapper i:hover {
   margin-top: -2px;
   text-shadow: 0px 5px 5px plum;
