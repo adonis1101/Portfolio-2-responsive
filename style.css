@@ -324,7 +324,7 @@ section .title::after {
   margin-top: 20px;
   border-radius: 6px;
   border: 2px solid orange;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .about .about-content .right a:hover {
   color: blueviolet;
@@ -353,7 +353,7 @@ section .title::after {
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .services .serv-content .card:hover {
   background: orange;
@@ -375,7 +375,7 @@ section .title::after {
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
-  margin: 10px 0 7px 0;
+  margin: 10px 1px 7px 0px;
 }
 
 /* skills section styling */
@@ -384,7 +384,7 @@ section .title::after {
   content: "what i know";
 }
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  width: calc(50% - 20px);
 }
 .skills .skills-content .left .text {
   font-size: 20px;
@@ -404,17 +404,30 @@ section .title::after {
   margin-top: 20px;
   border-radius: 6px;
   border: 2px solid orange;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .skills .skills-content .left a:hover {
   color: orange;
   background: none;
 }
-.skills .skills-content .right .bars {
-  margin-bottom: 10px;
+/* .skills .skills-content .right .bars {
+  margin-bottom: 1px;
+}  */
+.skills figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 10px 100px ;
+} 
+.skills img {
+	max-width: 50px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
 }
-.skills .skills-content .right .info {
+ .skills .skills-content .right .info {
   display: flex;
+  margin-top: 5px;
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
@@ -428,7 +441,7 @@ section .title::after {
   width: 100%;
   background: lightgrey;
   position: relative;
-}
+}  
 .skills .skills-content .right .line::before {
   content: "";
   position: absolute;
@@ -438,17 +451,24 @@ section .title::after {
   background: blueviolet;
 }
 .skills-content .right .html::before {
-  width: 90%;
+  width: 100%;
 }
 .skills-content .right .css::before {
-  width: 90%;
+  width: 100%;
 }
 .skills-content .right .js::before {
-  width: 90%;
+  width: 100%;
+}
+.skills-content .right .postgres::before {
+  width: 100%;
 }
 .skills-content .right .react::before {
-  width: 90%;
+  width: 100%;
 }
+.skills-content .right .node::before {
+  width: 100%;
+}
+
 /* projects section styling */
 .projects .title::after {
   content: "what i've done";
